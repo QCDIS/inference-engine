@@ -17,6 +17,7 @@ dependencies:
   - cxx-compiler
   - libgcc
   - libstdcxx-ng
+  - matplotlib
   - lazrs-python
   - laspy
   - pyyaml
