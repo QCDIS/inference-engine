@@ -35,3 +35,4 @@ dependencies:
       - git+https://github.com/QCDIS/prior-engine.git
       - git+https://github.com/QCDIS/KaFKA-InferenceEngine.git
       - git+https://github.com/QCDIS/BRDF_descriptors.git
+      - git+https://github.com/QCDIS/atmospheric_correction.git
