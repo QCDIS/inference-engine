@@ -1,4 +1,7 @@
-import gdal
+try:
+    from osgeo import gdal
+except ImportError:
+    import gdal
 import numpy as np
 import os
 from datetime import datetime
@@ -16,6 +19,7 @@ PROJECTION = "PROJCS[\"WGS 84 / UTM zone 30N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_198
              "PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000]," \
              "PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]]," \
              "AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32630\"]]"
+
 
 
 def test_init_with_wrong_format():
